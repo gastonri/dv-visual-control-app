@@ -1,20 +1,42 @@
+@import '../../mixins.scss';
+
 .display {
-    height: 50vh;
-    width: 80%;
+    background-color: #fefefe;
+    height: 33vh;
+    width: 100vw;
+
+    @include desktop {
+        height: 50vh;
+        width: 80%;
+    }
 
     &__video {
         display: flex;
-        justify-content: space-evenly;
-        height: 100%;
+        width: 100%;
+
+        @include desktop {
+            display: flex;
+            height: 100%;
+            justify-content: space-evenly;
+        }
 
         &__image {
-            height: 100%;
-            width: 800px;
+            width: 100vw;
+
+            @include desktop {
+                height: 100%;
+                width: 800px;
+            }
         }
 
         &__info {
-            align-self: center;
-            width: 30%;
+            display: none;
+
+            @include desktop {
+                align-self: center;
+                display: block;
+                width: 30%;
+            }
         }
     }
 }

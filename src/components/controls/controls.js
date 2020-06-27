@@ -6,8 +6,8 @@ import VideoDropdown from '../video-dropdown/video-dropdown';
 import {
     Brightness4,
     Brightness5,
-    PlayArrow,
     Pause,
+    PlayArrow,
     VolumeDown,
     VolumeUp
 } from '@material-ui/icons';
@@ -23,9 +23,9 @@ const Controls = (props) => {
 
     return (
         <div className="controls" id="video-controls">
-            <div className="controls__controls">
+            <div className="controls__buttons">
                 <Button
-                    className="controls__play-pause"
+                    className="controls__buttons__play-pause"
                     color="primary"
                     disabled={!props.video}
                     id="play-pause"
@@ -37,7 +37,7 @@ const Controls = (props) => {
                 >
                     {props.play ? <Pause /> : <PlayArrow />}
                 </Button>
-                <div className="controls__volume">
+                <div className="controls__buttons__volume">
                     <VolumeDown />
                     <Slider
                         className="controls__volume__slider"
@@ -52,7 +52,7 @@ const Controls = (props) => {
                     />
                     <VolumeUp />
                 </div>
-                <div className="controls__brightness">
+                <div className="controls__buttons__brightness">
                     <Brightness4 />
                     <Slider
                         className="controls__brightness__slider"

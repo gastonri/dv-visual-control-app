@@ -25,34 +25,34 @@ const VideoDropdown = (props) => {
                                         props.setVideoSrc(movie);
                                     }}
                                 >
-                                    <div className="video__card2">
+                                    <div className="video__card-info">
                                         <CardMedia
                                             className="video__media"
                                             image={movie.thumb}
                                             title={movie.title}
                                         />
-                                        <CardContent className="vide__card-content">
+                                        <CardContent className="video__card-content">
                                             <div className="video__title">
                                                 <Typography
+                                                    component="h2"
                                                     gutterBottom
                                                     variant="h5"
-                                                    component="h2"
                                                 >
                                                     {movie.title}
                                                 </Typography>
                                                 <Typography
+                                                    component="h3"
                                                     gutterBottom
                                                     variant="subtitle2"
-                                                    component="h3"
                                                 >
                                                     {movie.subtitle}
                                                 </Typography>
                                             </div>
                                             <Typography
-                                                variant="body2"
+                                                className="video__description"
                                                 color="textSecondary"
                                                 component="p"
-                                                className="video__description"
+                                                variant="body2"
                                             >
                                                 {movie.description}
                                             </Typography>

@@ -43,8 +43,8 @@ const mapStateToProps = (state) => {
     return {
         brightness: state.brightness,
         play: state.play,
-        videoSrc: state.video,
         videoInfo: state.videoInfo,
+        videoSrc: state.video,
         volume: state.volume
     };
 };

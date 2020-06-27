@@ -1,37 +1,37 @@
+@import '../../mixins.scss';
+
 .controls {
-    margin-top: 10px;
-    width: 80%;
+    @include desktop {
+        width: 80%;
+    }
 
-    &__controls {
+    &__buttons {
+        background-color: #fefefe;
         display: flex;
-        flex-direction: row;
         justify-content: center;
-        margin-bottom: 10px;
-    }
+        padding: 10px 0;
 
-    &__volume {
-        display: flex;
-
-        #volume-bar {
-            width: 100px;
-            margin: 0 10px;
+        @include desktop {
+            display: flex;
+            justify-content: center;
         }
-    }
 
-    &__brightness {
-        display: flex;
+        &__volume {
+            display: flex;
 
-        #volume-bar {
-            width: 100px;
-            margin: 0 10px;
+            #volume-bar {
+                width: 100px;
+                margin: 0 10px;
+            }
         }
-    }
-    &__contrast {
-        display: flex;
 
-        #volume-bar {
-            width: 100px;
-            margin: 0 10px;
+        &__brightness {
+            display: flex;
+
+            #volume-bar {
+                width: 100px;
+                margin: 0 10px;
+            }
         }
     }
 }

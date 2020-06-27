@@ -1,3 +1,5 @@
+@import '../../mixins.scss';
+
 .video {
     &__wrapper {
         display: flex;
@@ -5,11 +7,21 @@
     }
 
     &__list {
-        height: 43vh;
+        background-color: #fefefe;
+        height: 57vh;
         overflow: auto;
 
+        @include desktop {
+            height: 43vh;
+            overflow: auto;
+        }
+
         &__item {
-            width: 100%;
+            width: auto;
+
+            @include desktop {
+                width: 100%;
+            }
         }
     }
 
@@ -18,17 +30,28 @@
         width: 100%;
     }
 
-    &__card2 {
+    &__card-info {
         display: flex;
     }
 
     &__media {
-        min-width: 250px;
-        min-height: 140px;
+        width: 150px;
+        height: 75px;
+
+        @include desktop {
+            min-width: 250px;
+            min-height: 140px;
+        }
     }
 
     &__title {
         display: flex;
+        flex-direction: column;
+
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+        }
     }
 
     &__card-content {
@@ -36,6 +59,11 @@
     }
 
     &__description {
-        width: 100%;
+        display: none;
+
+        @include desktop {
+            display: block;
+            width: 100%;
+        }
     }
 }

@@ -1,0 +1,41 @@
+.video {
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__list {
+        height: 43vh;
+        overflow: auto;
+
+        &__item {
+            width: 100%;
+        }
+    }
+
+    &__card {
+        display: flex;
+        width: 100%;
+    }
+
+    &__card2 {
+        display: flex;
+    }
+
+    &__media {
+        min-width: 250px;
+        min-height: 140px;
+    }
+
+    &__title {
+        display: flex;
+    }
+
+    &__card-content {
+        padding: 10px;
+    }
+
+    &__description {
+        width: 100%;
+    }
+}

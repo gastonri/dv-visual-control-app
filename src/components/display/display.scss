@@ -1,0 +1,20 @@
+.display {
+    height: 50vh;
+    width: 80%;
+
+    &__video {
+        display: flex;
+        justify-content: space-evenly;
+        height: 100%;
+
+        &__image {
+            height: 100%;
+            width: 800px;
+        }
+
+        &__info {
+            align-self: center;
+            width: 30%;
+        }
+    }
+}

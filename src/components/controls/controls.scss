@@ -1,0 +1,37 @@
+.controls {
+    margin-top: 10px;
+    width: 80%;
+
+    &__controls {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    &__volume {
+        display: flex;
+
+        #volume-bar {
+            width: 100px;
+            margin: 0 10px;
+        }
+    }
+
+    &__brightness {
+        display: flex;
+
+        #volume-bar {
+            width: 100px;
+            margin: 0 10px;
+        }
+    }
+    &__contrast {
+        display: flex;
+
+        #volume-bar {
+            width: 100px;
+            margin: 0 10px;
+        }
+    }
+}
